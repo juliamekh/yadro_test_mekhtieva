@@ -30,7 +30,7 @@ def main():
     try:
         # Создаем папку для этого запуска
         run_folder = get_next_output_folder()
-        print(f"🚀 Запуск #{os.path.basename(run_folder)}")
+        print(f"Запуск #{os.path.basename(run_folder)}")
 
         # 1. Генерация файлов из XML
         classes, aggregations = parse_xml("input/impulse_test_input.xml")
